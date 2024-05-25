@@ -13,7 +13,7 @@ void print1(int n)
           for(int j=1;j<=i;j++){
               cout<<j;
           }
-          
+    
           // for printing spaces in each row
           for(int j = 1;j<=spaces;j++){
               cout<<" ";
