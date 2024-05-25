@@ -3,13 +3,18 @@ using namespace std;
 
 void print1(int n){
     int i,j;
+    int start;
     for(i=0;i<n;i++){
-        for(j=0;j<=i;j++){ // print no. of star same as row
-            cout<<"* ";
+        if(i%2==0) start=1;
+        else start = 0;   
+        for(j=0 ; j<=i;j++){
+            cout<<start;
+            start = 1 - start;
         }
-        cout<<endl;
+             cout<<endl;
+        }
     }
-}
+
 int main() {
     int n,t;
     cout<<"Enter how many time you want to print : ";
@@ -21,3 +26,4 @@ int main() {
     }
     return 0;
 }
+
