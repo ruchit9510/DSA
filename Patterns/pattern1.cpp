@@ -1,16 +1,19 @@
 #include <iostream>
 using namespace std;
 
-
-int main() {
+void print1(int n){
     int i,j;
-
-    for(i=0;i<4;i++){
-        for(j=0;j<4;j++){
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
             cout<<"* ";
         }
         cout<<endl;
     }
-    
+}
+int main() {
+    int n;
+    cout<<"Enter the number of stars in line : ";
+    cin>>n;
+    print1(n);
     return 0;
 }
