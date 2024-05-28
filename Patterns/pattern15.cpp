@@ -3,13 +3,14 @@ using namespace std;
 
 
 void print1(int n){
-    int i,j;
-    int num=1;
+    int i;
+
     for(i=0;i<n;i++){
-        for(j=0;j<=i;j++){
-            cout<<num<<" ";
-            num=num+1;
+        for(char ch ='A';ch<='A'+(n-i-1);ch++){
+            cout<<ch<<" ";
+            
         }
+            
             cout<<endl;
         }
     }
