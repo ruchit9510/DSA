@@ -2,41 +2,46 @@
 using namespace std;
 
 
+
 void print1(int n){
-    int inis=0;
-    for(int i=0;i<n;i++){
+    int i,j;
+    int inIs=0; //initial spaces
+    
+    for(i=0;i<n;i++){
     //stars
-    for(int j=1;j<=n-i;j++){
+    for(j=1;j<=n-i;j++){
         cout<<"*";
     }
-    //space
-    for(int j=0;j<inis;j++){
+    //spaces
+    for(j=0;j<inIs;j++){
         cout<<" ";
     }
     //stars
-    for(int j=1;j<=n-i;j++){
+    for(j=1;j<=n-i;j++){
         cout<<"*";
     }
-    inis +=2;
+    inIs+=2;
     cout<<endl;
     }
-     inis=2*n-2;
-    for(int i=1;i<=n;i++){
-    //stars
-    for(int j=1;j<=i;j++){
-        cout<<"*";
+    
+    inIs = 2*n-2;
+    for(i=1;i<=n;i++){
+        //stars
+        for(j=1;j<=i;j++){
+            cout<<"*";
+        }
+        //spcaes
+        for(j=0;j<inIs;j++){
+            cout<<" ";
+        }
+        //stars
+        for(j=1;j<=i;j++){
+            cout<<"*";
+        }
+        inIs-=2;
+        cout<<endl;
     }
-    //space
-    for(int j=0;j<inis;j++){
-        cout<<" ";
-    }
-    //stars
-    for(int j=1;j<=i;j++){
-        cout<<"*";
-    }
-    inis -=2;
-    cout<<endl;
-    }}
+}
 
 int main() {
     int n,t;
