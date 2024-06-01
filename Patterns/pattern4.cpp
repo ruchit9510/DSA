@@ -10,6 +10,7 @@ void print1(int n){
         cout<<endl;
     }
 }
+
 int main() {
     int n,t;
     cout<<"Enter how many time you want to print : ";

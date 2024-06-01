@@ -1,24 +1,26 @@
 #include <iostream>
 using namespace std;
 
+
 void print1(int n){
     int i,j;
     for(i=0;i<n;i++){
-        //space
-        for(j=0;j<n-i-1;j++){ 
+    //space
+    for(j=0;j<n-i-1;j++){
         cout<<" ";
-        }
-        //star
-        for(j=0;j<2*i+1;j++){ 
+    }
+    //stars
+    for(j=0;j<2*i+1;j++){
         cout<<"*";
-        }
-        //space
-        for(j=0;j<n-i-1;j++){ 
+    }
+    //space
+    for(j=0;j<n-i-1;j++){
         cout<<" ";
-        }
-        cout<<endl;
+    }
+    cout<<endl;
     }
 }
+
 int main() {
     int n,t;
     cout<<"Enter how many time you want to print : ";

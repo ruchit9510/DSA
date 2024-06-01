@@ -11,9 +11,10 @@ void print1(int n){
             cout<<start;
             start = 1 - start;
         }
-             cout<<endl;
+            cout<<endl;
         }
     }
+
 
 int main() {
     int n,t;

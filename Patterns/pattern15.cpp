@@ -6,7 +6,7 @@ void print1(int n){
     int i;
 
     for(i=0;i<n;i++){
-        for(char ch ='A';ch<='A'+(n-i-1);ch++){
+        for(char ch ='A';ch<'A'+(n-i);ch++){
             cout<<ch<<" ";
             
         }

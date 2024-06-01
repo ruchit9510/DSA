@@ -1,16 +1,28 @@
 #include <iostream>
 using namespace std;
 
+// void print1(int n){
+//     int i,j;
+//     for(i=1;i<=2*n-1;i++){
+//         int star = i;
+//         if(i>n){star=2*n-i;}
+//         for(j=1 ; j<=star ; j++){
+//             cout<<"*";
+//         }
+//         cout<<endl;
+//     }}
+
 void print1(int n){
     int i,j;
     for(i=1;i<=2*n-1;i++){
-        int star = i;
+        int star=i;
         if(i>n){star=2*n-i;}
-        for(j=1 ; j<=star ; j++){
+        for(j=1;j<=star;j++){
             cout<<"*";
         }
         cout<<endl;
-    }}
+    }
+}
 
 int main() {
     int n,t;
