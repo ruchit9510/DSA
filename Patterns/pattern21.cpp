@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
+
 void print1(int n){
     int i,j;
-    for(i=0;i<2*n-1;i++){
-        for(j=0;j<2*n-1;j++){
-            int top = i;
-            int bottom = j;
-            int right = (2*n - 2) - j;
-            int left = (2*n - 2) - i;
-            cout<<(n- min(min(top,bottom), min(left,right)))<<" ";
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n;j++){
+            if(i==1 || j==1 ||i==n || j==n){
+                cout<<"*";
+            }else cout<<" ";
         }
         cout<<endl;
-    }}
+    }
+}
 
 int main() {
     int n,t;

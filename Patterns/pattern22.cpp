@@ -3,11 +3,13 @@ using namespace std;
 
 void print1(int n){
     int i,j;
-    for(i=1;i<=2*n-1;i++){
-        int star = i;
-        if(i>n){star=2*n-i;}
-        for(j=1 ; j<=star ; j++){
-            cout<<"*";
+    for(i=0;i<2*n-1;i++){
+        for(j=0;j<2*n-1;j++){
+            int top = i;
+            int bottom = j;
+            int right = (2*n - 2) - j;
+            int left = (2*n - 2) - i;
+            cout<<(n- min(min(top,bottom), min(left,right)))<<" ";
         }
         cout<<endl;
     }}

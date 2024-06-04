@@ -1,27 +1,30 @@
 #include <iostream>
 using namespace std;
 
+
 void print1(int n){
     int i,j;
-    int space=2*n-2;
+    int space = 2*n-2;
     for(i=1;i<=2*n-1;i++){
-        int stars=i;
-        if(i>n)stars=2*n-i;
+        int star = i;
+        if(i>n) star =  2*n-i;
         //stars
-        for(j=1;j<=stars;j++){
+        for(j=1;j<=star;j++){
             cout<<"*";
         }
         //spaces
-        for(j=1;j<=space;j++)
+        for(j=1;j<=space;j++){
         cout<<" ";
+        }
         //stars
-        for(j=1;j<=stars;j++){
+        for(j=1;j<=star;j++){
             cout<<"*";
         }
         cout<<endl;
-        if(i<n)space-=2;
-        else space +=2;
-    }}
+        if(i<n) space-=2;
+        else space+=2;
+    }
+}
 
 int main() {
     int n,t;
