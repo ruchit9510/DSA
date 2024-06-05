@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void print(int i, int sum){
+void print(int i, int sum){ //Parameterised way
     if(i<1){
         cout<<"Sum is : "<<sum;
         return ;
