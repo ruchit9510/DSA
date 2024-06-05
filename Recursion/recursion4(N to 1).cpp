@@ -12,7 +12,7 @@ print(i-1,n);
 int main(){
 int n;
     cout<<"Enter number of times you want to print : ";
-    cin>>n;
+    cin>>n; 
 
     print(n,n);
     return 0;
