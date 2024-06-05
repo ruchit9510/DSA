@@ -13,8 +13,7 @@ int main(){
 int n;
     cout<<"Enter number of times you want to print : ";
     cin>>n;
-    int i=n;
 
-    print(i,n);
+    print(n,n);
     return 0;
 }
