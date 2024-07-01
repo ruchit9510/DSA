@@ -37,3 +37,10 @@ int main() {
     }
     return 0;
 }
+
+
+    A    
+   ABA   
+  ABCBA  
+ ABCDCBA 
+ABCDEDCBA
